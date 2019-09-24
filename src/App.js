@@ -7,15 +7,27 @@ import { ThemeProvider } from '@material-ui/styles';
 const theme = createMuiTheme({
   typography: {
     h1: {
-      fontSize: "4rem",
+      fontSize: "3rem",
       fontWeight: 500,
     },
+    h2: {
+      fontSize: "2rem",
+    },
+    h3: {
+      fontSize: "1.2rem",
+    },
+    subtitle: {
+      fontSize: "1.2rem",
+    },
     body1: {
-      fontSize: "1.3rem",
+      fontSize: "1.2rem",
     },
     body2: {
-      fontSize: "1.3rem"
-    }
+      fontSize: "1.1rem"
+    },
+    caption: {
+      fontSize: "0.9rem"
+    },
   },
 });
 
