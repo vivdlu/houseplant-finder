@@ -1,23 +1,45 @@
 import React, { Fragment } from 'react';
-import { Container, Typography, Grid, Slider, Card, CardContent, CardMedia, Button } from '@material-ui/core';
+import { Container, Typography, Grid, Slider, Card, CardContent, CardMedia, Button, createMuiTheme } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/styles';
 import { Rating } from '@material-ui/lab';
-import { makeStyles } from '@material-ui/styles';
 import Header from './HeaderComponent';
 import Results from './ResultsComponent';
+import Footer from './FooterComponent';
 
-const useStyles = makeStyles({
-  root: {
-    color: "white",
+const theme = createMuiTheme({
+  typography: {
+    h1: {
+      fontSize: "2.5rem",
+      fontWeight: 500,
+    },
+    h2: {
+      fontSize: "1.8rem",
+    },
+    h3: {
+      fontSize: "1.2rem",
+    },
+    subtitle: {
+      fontSize: "0.9rem",
+    },
+    body1: {
+      fontSize: "1.1rem",
+    },
+    body2: {
+      fontSize: "1rem"
+    },
+    caption: {
+      fontSize: "0.9rem"
+    },
   },
 });
 
 function Main() {
-  const classes = useStyles();
   return (
-    <Fragment>
+    <ThemeProvider theme={theme}>
       <Header />
       <Results />
-    </Fragment>
+      <Footer />
+    </ThemeProvider>
   );
 }
 
