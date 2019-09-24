@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormGroup, FormControlLabel, Checkbox, Container, Typography, Grid, Slider } from '@material-ui/core';
+import { Container, Typography, Grid, Slider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
@@ -24,7 +24,7 @@ function Main() {
       <Grid id="intro-text" className="intro" container>
         <Grid item xs={12}>
           <Typography variant="h1" component="h1" gutterBottom>
-            Houseplant Picker
+            Find a Houseplant
           </Typography>
           <Typography variant="body1" gutterBottom>
             We'll help you pick a houseplant that you can actually keep alive.
@@ -41,10 +41,10 @@ function Main() {
             defaultValue={0}
             aria-labelledby="discrete-slider"
             valueLabelDisplay="auto"
-            step={2}
+            step={1}
             marks
             min={0}
-            max={10}
+            max={5}
             />
         </Grid>
         <Grid item xs={12} sm={6}>
@@ -56,10 +56,10 @@ function Main() {
             defaultValue={0}
             aria-labelledby="discrete-slider"
             valueLabelDisplay="auto"
-            step={2}
+            step={1}
             marks
             min={0}
-            max={10}
+            max={5}
             />
         </Grid>
         <Grid item xs={12} sm={6}>
@@ -71,40 +71,27 @@ function Main() {
             defaultValue={0}
             aria-labelledby="discrete-slider"
             valueLabelDisplay="auto"
-            step={2}
+            step={1}
             marks
             min={0}
-            max={10}
+            max={5}
             />
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography className="main-body" variant="body2" gutterBottom>
-            &#x1F332; Size
+            	&#x1F30C; Space
           </Typography>
           <Slider
             className={classes.root}
             defaultValue={0}
             aria-labelledby="discrete-slider"
             valueLabelDisplay="auto"
-            step={2}
+            step={1}
             marks
             min={0}
-            max={10}
+            max={5}
             />
         </Grid>
-      </Grid>
-      <Grid className="checkboxes" container spacing={3}>
-      <FormGroup row>
-      <FormControlLabel
-        control={
-          <Checkbox
-            color="green"
-          />
-        }
-        label="Primary"
-        labelPlacement="end"
-      />
-      </FormGroup>
       </Grid>
     </Container>
   );
