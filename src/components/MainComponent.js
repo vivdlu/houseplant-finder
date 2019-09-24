@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Grid, Slider } from '@material-ui/core';
+import { FormGroup, FormControlLabel, Checkbox, Container, Typography, Grid, Slider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
@@ -24,14 +24,14 @@ function Main() {
       <Grid id="intro-text" className="intro" container>
         <Grid item xs={12}>
           <Typography variant="h1" component="h1" gutterBottom>
-            Pick a Houseplant
+            Houseplant Picker
           </Typography>
           <Typography variant="body1" gutterBottom>
             We'll help you pick a houseplant that you can actually keep alive.
           </Typography>
         </Grid>
       </Grid>
-      <Grid className="slider" container spacing={3}>
+      <Grid className="sliders" container spacing={5}>
         <Grid item xs={12} sm={6}>
           <Typography className="main-body" variant="body2" gutterBottom>
             &#x1F4A6; Water
@@ -92,6 +92,19 @@ function Main() {
             max={10}
             />
         </Grid>
+      </Grid>
+      <Grid className="checkboxes" container spacing={3}>
+      <FormGroup row>
+      <FormControlLabel
+        control={
+          <Checkbox
+            color="green"
+          />
+        }
+        label="Primary"
+        labelPlacement="end"
+      />
+      </FormGroup>
       </Grid>
     </Container>
   );

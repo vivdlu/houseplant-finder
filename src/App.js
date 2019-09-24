@@ -9,11 +9,9 @@ const theme = createMuiTheme({
     h1: {
       fontSize: "4rem",
       fontWeight: 500,
-      paddingTop: "25px"
     },
     body1: {
       fontSize: "1.3rem",
-      paddingBottom: "25px"
     },
     body2: {
       fontSize: "1.3rem"
