@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography, Grid, Slider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
+import Emoji from './EmojiComponent';
 
 const useStyles = makeStyles({
   root: {
@@ -17,7 +18,7 @@ function Sliders() {
     <Grid className={classes.root} container spacing={5}>
       <Grid item xs={6} sm={4}>
         <Typography className="main-body" variant="body2" gutterBottom>
-          &#x1f6b0; Water
+          <Emoji symbol="🚰" label="potable-water"/> Water
         </Typography>
         <Slider
           className={classes.slider}
@@ -32,7 +33,7 @@ function Sliders() {
       </Grid>
       <Grid item xs={6} sm={4}>
         <Typography className="main-body" variant="body2" gutterBottom>
-          &#x2600;&#xFE0F; Light
+          <Emoji symbol="☀️" label="sun"/> Light
         </Typography>
         <Slider
           className={classes.slider}
@@ -47,7 +48,7 @@ function Sliders() {
       </Grid>
       <Grid item xs={6} sm={4}>
         <Typography className="main-body" variant="body2" gutterBottom>
-          &#x1F321;&#xFE0F; Temperature
+          <Emoji symbol="🌡️" label="thermometer"/> Temperature
         </Typography>
         <Slider
           className={classes.slider}
@@ -62,7 +63,7 @@ function Sliders() {
       </Grid>
       <Grid item xs={6} sm={4}>
         <Typography className="main-body" variant="body2" gutterBottom>
-          &#x1F4A6; Humidity
+          <Emoji symbol="💦" label="sweat-droplets"/> Humidity
         </Typography>
         <Slider
           className={classes.slider}
@@ -77,7 +78,7 @@ function Sliders() {
       </Grid>
       <Grid item xs={6} sm={4}>
         <Typography className="main-body" variant="body2" gutterBottom>
-          &#x1F30C; Space
+          <Emoji symbol="🌌" label="milky-way"/> Space
         </Typography>
         <Slider
           className={classes.slider}
@@ -92,7 +93,7 @@ function Sliders() {
       </Grid>
       <Grid item xs={6} sm={4}>
         <Typography className="main-body" variant="body2" gutterBottom>
-          &#x1F4AA; Difficulty
+          <Emoji symbol="💪" label="flexed-biceps"/> Difficulty
         </Typography>
         <Slider
           className={classes.slider}

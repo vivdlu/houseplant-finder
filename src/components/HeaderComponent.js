@@ -1,12 +1,12 @@
 import React from 'react';
-import { AppBar, Container, Typography, Grid, Slider } from '@material-ui/core';
+import { AppBar, Container, Typography, Grid} from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import Sliders from './SlidersComponent';
 
 const useStyles = makeStyles({
   root: {
     backgroundColor: "darkgreen",
-    padding: "30px 20px 20px",
+    padding: "30px 20px 35px",
     textAlign: "center"
   },
   headerSubtitle: {
@@ -29,7 +29,7 @@ function Header() {
         <Grid className={classes.headerSubtitle} container>
           <Grid item xs={12}>
             <Typography variant="subtitle" gutterBottom>
-              We'll help you find a houseplant that you can actually keep alive.
+              Set your requirements with the sliders below and find a houseplant that you can actually keep alive.
             </Typography>
           </Grid>
         </Grid>

@@ -1,7 +1,6 @@
-import React, { Fragment } from 'react';
-import { Container, Typography, Grid, Slider, Card, CardContent, CardMedia, Button, createMuiTheme } from '@material-ui/core';
+import React from 'react';
+import { createMuiTheme } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
-import { Rating } from '@material-ui/lab';
 import Header from './HeaderComponent';
 import Results from './ResultsComponent';
 import Footer from './FooterComponent';
@@ -14,9 +13,11 @@ const theme = createMuiTheme({
     },
     h2: {
       fontSize: "1.8rem",
+      padding: "0 0 1rem",
     },
     h3: {
-      fontSize: "1.2rem",
+      fontSize: "1.3rem",
+      padding: "0.5rem 0"
     },
     subtitle: {
       fontSize: "0.9rem",
@@ -28,7 +29,7 @@ const theme = createMuiTheme({
       fontSize: "1rem"
     },
     caption: {
-      fontSize: "0.9rem"
+      fontSize: "0.7rem"
     },
   },
 });
