@@ -1,6 +1,13 @@
 import React from 'react';
-import { AppBar, Container, Typography, Grid} from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import {
+  AppBar,
+  Container,
+  Typography,
+  Grid
+} from '@material-ui/core';
+import {
+  makeStyles
+} from '@material-ui/styles';
 import Sliders from './SlidersComponent';
 
 const useStyles = makeStyles({
@@ -16,26 +23,49 @@ const useStyles = makeStyles({
 
 function Header() {
   const classes = useStyles();
-  return (
-    <AppBar className={classes.root} position="static">
-      <Container maxWidth="lg">
-        <Grid className={classes.headerText} container>
-          <Grid item xs={12}>
-            <Typography variant="h1" component="h1" gutterBottom>
-              Find a Houseplant
-            </Typography>
-          </Grid>
-        </Grid>
-        <Grid className={classes.headerSubtitle} container>
-          <Grid item xs={12}>
-            <Typography variant="subtitle" gutterBottom>
-              Set your requirements with the sliders below and find a houseplant that you can actually keep alive.
-            </Typography>
-          </Grid>
-        </Grid>
-        <Sliders />
-      </Container>
-    </AppBar>
+  return ( <
+    AppBar className = {
+      classes.root
+    }
+    position = "static" >
+    <
+    Container maxWidth = "lg" >
+    <
+    Grid className = {
+      classes.headerText
+    }
+    container >
+    <
+    Grid item xs = {
+      12
+    } >
+    <
+    Typography variant = "h1"
+    component = "h1"
+    gutterBottom >
+    Find a Houseplant <
+    /Typography> <
+    /Grid> <
+    /Grid> <
+    Grid className = {
+      classes.headerSubtitle
+    }
+    container >
+    <
+    Grid item xs = {
+      12
+    } >
+    <
+    Typography variant = "subtitle"
+    gutterBottom >
+    Set your requirements with the sliders below and find a houseplant that you can actually keep alive. <
+    /Typography> <
+    /Grid> <
+    /Grid> <
+    Sliders / >
+    <
+    /Container> <
+    /AppBar>
   );
 }
 

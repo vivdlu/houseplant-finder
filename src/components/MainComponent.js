@@ -1,6 +1,10 @@
 import React from 'react';
-import { createMuiTheme } from '@material-ui/core';
-import { ThemeProvider } from '@material-ui/styles';
+import {
+  createMuiTheme
+} from '@material-ui/core';
+import {
+  ThemeProvider
+} from '@material-ui/styles';
 import Header from './HeaderComponent';
 import Results from './ResultsComponent';
 import Footer from './FooterComponent';
@@ -35,12 +39,18 @@ const theme = createMuiTheme({
 });
 
 function Main() {
-  return (
-    <ThemeProvider theme={theme}>
-      <Header />
-      <Results />
-      <Footer />
-    </ThemeProvider>
+  return ( <
+    ThemeProvider theme = {
+      theme
+    } >
+    <
+    Header / >
+    <
+    Results / >
+    <
+    Footer / >
+    <
+    /ThemeProvider>
   );
 }
 

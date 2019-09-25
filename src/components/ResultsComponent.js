@@ -1,7 +1,18 @@
-import React from 'react';
-import { Container, Typography, Grid } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import React, {
+  Fragment
+} from 'react';
+import {
+  Container,
+  Typography,
+  Grid
+} from '@material-ui/core';
+import {
+  makeStyles
+} from '@material-ui/styles';
 import SingleResult from './SingleResultComponent';
+import {
+  PLANTS
+} from '../shared/PLANTS';
 
 const useStyles = makeStyles({
   root: {
@@ -14,18 +25,41 @@ const useStyles = makeStyles({
 
 function Results() {
   const classes = useStyles();
-  return (
-    <Container className={classes.root} maxWidth="md">
-      <Typography className={classes.resultsTitle} gutterBottom variant="h2" component="h2">
-        Results:
-      </Typography>
-      <Grid className={classes.results} container spacing={2}>
-        <SingleResult key={1} />
-        <SingleResult key={2} />
-        <SingleResult key={3} />
-        <SingleResult key={4} />
-      </Grid>
-    </Container>
+  const renderResults = PLANTS.map((plant) => {
+    return ( <
+      Fragment >
+      <
+      SingleResult key = {
+        plant.key
+      }
+      /> <
+      /Fragment>
+    );
+  });
+
+  return ( <
+    Container className = {
+      classes.root
+    }
+    maxWidth = "md" >
+    <
+    Typography className = {
+      classes.resultsTitle
+    }
+    gutterBottom variant = "h2"
+    component = "h2" >
+    Results:
+    <
+    /Typography> <
+    Grid className = {
+      classes.results
+    }
+    container spacing = {
+      2
+    } >
+    {renderResults} <
+    /Grid> <
+    /Container>
   );
 }
 

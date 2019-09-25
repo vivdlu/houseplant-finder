@@ -1,7 +1,6 @@
-export const SLIDERS = [
-  {
+export const SLIDERS = [{
     id: 0,
-    name:"Water",
+    name: "Water",
     emoji: "🚰",
     label: "potable-water",
   },
@@ -31,7 +30,7 @@ export const SLIDERS = [
   },
   {
     id: 5,
-    name:"Difficulty",
+    name: "Difficulty",
     emoji: "💪",
     label: "flexed-bicep",
   },
