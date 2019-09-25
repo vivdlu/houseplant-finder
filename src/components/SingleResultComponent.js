@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   }
 });
 
-function SingleResult() {
+function SingleResult({ image, name, ratings }) {
   const classes = useStyles();
   return (
     <Grid item xs={6} sm={3}>
@@ -35,14 +35,14 @@ function SingleResult() {
                 <CardMedia
                   className={classes.media}
                   component="img"
-                  image="https://www.houseplantsexpert.com/image-files/aloevera.jpg"
-                  title="Aloe Vera"
-                  alt="Aloe Vera"
+                  image={image}
+                  title={name}
+                  alt={name}
                 />
               </Grid>{" "}
               <Grid className={classes.singleResultTitle} item xs={12}>
                 <Typography gutterBottom variant="h3" component="h3">
-                  Aloe Vera{" "}
+                  {name}{" "}
                 </Typography>{" "}
               </Grid>{" "}
             </Grid>{" "}

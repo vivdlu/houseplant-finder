@@ -12,7 +12,7 @@ const StyledRating = withStyles({
   }
 })(Rating);
 
-function SingleResultRating() {
+function SingleResultRating({ ratings }) {
   return (
     <Fragment>
       <Grid item xs={12} sm={6}>

@@ -18,7 +18,12 @@ function Results() {
   const renderResults = PLANTS.map(plant => {
     return (
       <Fragment>
-        <SingleResult key={plant.key} />{" "}
+        <SingleResult
+          key={plant.key}
+          name={plant.name}
+          image={plant.image}
+          ratings={plant.ratings}
+        />{" "}
       </Fragment>
     );
   });
