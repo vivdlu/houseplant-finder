@@ -20,12 +20,12 @@ const StyledSlider = withStyles({
 
 const useStyles = makeStyles({});
 
-function SingleSlider() {
+function SingleSlider({ name, emoji, label }) {
   const classes = useStyles();
   return (
     <Grid item xs={6} sm={4}>
       <Typography className="main-body" variant="body2" gutterBottom>
-        <Emoji symbol="🚰" label="potable-water" /> Water{" "}
+        <Emoji symbol={emoji} label={label} /> {name}{" "}
       </Typography>{" "}
       <StyledSlider
         className={classes.slider}

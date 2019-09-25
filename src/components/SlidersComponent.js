@@ -15,7 +15,12 @@ function Sliders() {
   const renderSliders = SLIDERS.map(slider => {
     return (
       <Fragment>
-        <SingleSlider key={slider.id} />{" "}
+        <SingleSlider
+          key={slider.key}
+          name={slider.name}
+          emoji={slider.emoji}
+          label={slider.label}
+        />{" "}
       </Fragment>
     );
   });
