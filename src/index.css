@@ -5,18 +5,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-span.PrivateValueLabel-offset-201.MuiSlider-valueLabel {
-  top: 30px;
-  transform-origin: top center;
-}
-
-span.PrivateValueLabel-circle-202 {
-  color: transparent;
-}
-
-span.PrivateValueLabel-label-203 {
-  color: white;
-  font-weight: 500;
-  font-size: 1rem;
-}
